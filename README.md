@@ -11,16 +11,16 @@
 
 
 ### Структура проекта
-├── src/  
-|   └── pug/  
-|---└── static/  
-|-------└── js/  
-|-----------└── main.js  
-|-------└── scss/    
-|-----------└── main.scss  
-|-------└── fonts/  
-|       └── img/  
-├── build/  
-├── .gitignore  
-├── gulpfile.js  
+| src/    
+| └── pug/    
+| └── static/    
+|     └── js/    
+|         └── main.js    
+|     └── scss/      
+|         └── main.scss    
+|     └── fonts/    
+|     └── img/  
+| build/    
+| .gitignore    
+| gulpfile.js    
  
