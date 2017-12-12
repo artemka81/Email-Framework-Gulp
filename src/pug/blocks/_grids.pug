@@ -9,7 +9,7 @@ mixin grid-one
 					block
 				else
 					tr
-						td(align="center" valign="top" style="font-size:14px;") Grid One 
+						td(align="center" valign="top" style="font-size:14px; padding:10px;") Grid One 
 			+ie-close
 
 //- grid-two
@@ -21,15 +21,109 @@ mixin grid-two
 			table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:640px;" bgcolor="#ffffff")
 				tr
 					td(align="center" valign="top" style="font-size:0;")
-						+ie-open({table: 640, cell:310})
-						div(style="display:inline-block; max-width:310px; vertical-align:top; width:100%;")
-							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:310px;" class="deviceWidth")
+						+ie-open({table: 640, cell:318})
+						div(style="display:inline-block; max-width:320px; vertical-align:top; width:100%;")
+							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:320px;")
 								tr
-									td(align="center" valign="top" style="font-size:14px;")  Grid Two
-						+ie-col({cell:310})
-						div(style="display:inline-block; max-width:310px; vertical-align:top; width:100%;")
-							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:310px;" class="deviceWidth")
+									td(align="center" valign="top" style="font-size:14px; padding:10px;")  Grid Two
+						+ie-col({cell:318})
+						div(style="display:inline-block; max-width:320px; vertical-align:top; width:100%;")
+							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:320px;")
 								tr
-									td(align="center" valign="top" style="font-size:14px;")  Grid Two
+									td(align="center" valign="top" style="font-size:14px; padding:10px;")  Grid Two
 						+ie-close
 			+ie-close
+
+//- grid-three
+//--------------
+mixin grid-three
+	tr
+		td(align="center" height="100%" valign="top" width="100%")
+			+ie-open({table: 640})
+			table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:640px;" bgcolor="#ffffff")
+				tr
+					td(align="center" valign="top" style="font-size:0;")
+						+ie-open({table: 640, cell:210})
+						div(style="display:inline-block; max-width:210px; vertical-align:top; width:100%;" class="mobile")
+							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:210px;")
+								tr
+									td(align="center" valign="top" style="font-size:14px; padding:10px;")  Grid Trhee
+						+ie-col({cell:210})
+						div(style="display:inline-block; max-width:210px; vertical-align:top; width:100%;" class="mobile")
+							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:210px;")
+								tr
+									td(align="center" valign="top" style="font-size:14px; padding:10px;")  Grid Trhee
+						+ie-col({cell:210})
+						div(style="display:inline-block; max-width:210px; vertical-align:top; width:100%;" class="mobile")
+							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:210px;")
+								tr
+									td(align="center" valign="top" style="font-size:14px; padding:10px;")  Grid Trhee
+						+ie-close
+			+ie-close
+
+
+//- grid-four
+//--------------
+mixin grid-four
+	tr
+		td(align="center" height="100%" valign="top" width="100%")
+			+ie-open({table: 640})
+			table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:640px;" bgcolor="#ffffff")
+				tr
+					td(align="center" valign="top" style="font-size:0;")
+						+ie-open({table: 640, cell:160})
+						div(style="display:inline-block; max-width:160px; vertical-align:top; width:100%;" class="mobile")
+							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:160px;")
+								tr
+									td(align="center" valign="top" style="font-size:14px; padding:10px;")  Grid Trhee
+						+ie-col({cell:160})
+						div(style="display:inline-block; max-width:160px; vertical-align:top; width:100%;" class="mobile")
+							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:160px;")
+								tr
+									td(align="center" valign="top" style="font-size:14px; padding:10px;")  Grid Trhee
+						+ie-col({cell:160})
+						div(style="display:inline-block; max-width:160px; vertical-align:top; width:100%;" class="mobile")
+							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:160px;")
+								tr
+									td(align="center" valign="top" style="font-size:14px; padding:10px;")  Grid Trhee
+						+ie-close
+						div(style="display:inline-block; max-width:160px; vertical-align:top; width:100%;" class="mobile")
+							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:160px;" )
+								tr
+									td(align="center" valign="top" style="font-size:14px; padding:10px;")  Grid Trhee
+						+ie-close
+			+ie-close
+
+//- grid-five
+//--------------
+mixin grid-fivemobile
+	tr
+		td(align="center" height="100%" valign="top" width="100%")
+			+ie-open({table: 640})
+			table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:640px;" bgcolor="#ffffff")
+				tr
+					td(align="center" valign="top" style="font-size:0;")
+						+ie-open({table: 640, cell:160})
+						div(style="display:inline-block; max-width:160px; vertical-align:top; width:100%;")
+							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:160px;")
+								tr
+									td(align="center" valign="top" style="font-size:14px; padding:10px;")  Grid Trhee
+						+ie-col({cell:160})
+						div(style="display:inline-block; max-width:160px; vertical-align:top; width:100%;")
+							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:160px;")
+								tr
+									td(align="center" valign="top" style="font-size:14px; padding:10px;")  Grid Trhee
+						+ie-col({cell:160})
+						div(style="display:inline-block; max-width:160px; vertical-align:top; width:100%;")
+							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:160px;")
+								tr
+									td(align="center" valign="top" style="font-size:14px; padding:10px;")  Grid Trhee
+						+ie-close
+						div(style="display:inline-block; max-width:160px; vertical-align:top; width:100%;")
+							table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:160px;")
+								tr
+									td(align="center" valign="top" style="font-size:14px; padding:10px;")  Grid Trhee
+						+ie-close
+			+ie-close
+
+
