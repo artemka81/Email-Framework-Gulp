@@ -5,6 +5,7 @@ var pug  = require('gulp-pug');
 var scss = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var notify = require('gulp-notify');
+var sassGlob = require('gulp-sass-glob');
 var browserSync = require('browser-sync').create();
 
 
@@ -15,24 +16,25 @@ gulp.task('server', function() {
         server: {
             baseDir: "build/"
         }
-    });
-    browserSync.watch('build', browserSync.reload)
+    });    
 });
 
 
 
 /* PUG */
 gulp.task('pug', function(){
-	return gulp.src('src/pug/pages/*.pug')
+	return gulp.src('src/pug/index.pug')
 		.pipe(pug({
 			pretty:true
 		}))
-		.pipe(gulp.dest('build/'));
+		.pipe(gulp.dest('build/'))
+		.on('end', browserSync.reload);
 }); 
 
 /* SCSS */
 gulp.task('scss', function(){
 	return gulp.src('src/static/scss/main.scss')
+		.pipe(sassGlob())
 		.pipe(scss().on('error', scss.logError))
 		.pipe(autoprefixer({
             browsers: ['last 2 versions'],
@@ -42,7 +44,10 @@ gulp.task('scss', function(){
         message: "Error: <%= error.message %>",
         title: "Ошибка SCSS"
       }))
-    .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest('build/'))
+    .pipe(browserSync.reload({
+    	stream: true
+    }));
 });
 
 /* WATCH */
