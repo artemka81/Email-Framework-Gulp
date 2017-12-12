@@ -15,12 +15,14 @@ $ echo node_modules>>.gitignore
 ```sh
 $ echo build>>.gitignore
 ```
-5. Устанавлливаем плагины для gulp(локально)    
+5. Устанавливаем плагины для gulp(локально)    
 ```sh
 $ npm i --save-dev gulp-pug gulp-sass gulp-notify gulp-autoprefixer
 ```
-
-
+6. Устанавливаем Browsersync
+```sh
+$ npm install browser-sync gulp --save-dev
+```
 
 
 

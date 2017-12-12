@@ -5,6 +5,21 @@ var pug  = require('gulp-pug');
 var scss = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var notify = require('gulp-notify');
+var browserSync = require('browser-sync').create();
+
+
+
+/* SERVER */
+gulp.task('server', function() {
+    browserSync.init({
+        server: {
+            baseDir: "build/"
+        }
+    });
+    browserSync.watch('build', browserSync.reload)
+});
+
+
 
 /* PUG */
 gulp.task('pug', function(){
@@ -39,5 +54,6 @@ gulp.task('watch', function(){
 /* DEFAULT */
 gulp.task('default', gulp.series(
 	gulp.parallel('pug','scss'),
-	'watch'
+	gulp.parallel('watch','server')
+	
 	));
