@@ -1,14 +1,14 @@
 'use strict';
 
-var gulp = require('gulp');
-var pug  = require('gulp-pug');
-var scss = require('gulp-sass');
+var gulp         = require('gulp');
+var pug          = require('gulp-pug');
+var scss         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var notify = require('gulp-notify');
-var sassGlob = require('gulp-sass-glob');
-var browserSync = require('browser-sync').create();
-
-
+var notify       = require('gulp-notify');
+var sassGlob     = require('gulp-sass-glob');
+var browserSync  = require('browser-sync').create();
+var inlineCss    = require('gulp-inline-css');
+var rename       = require("gulp-rename");
 
 /* SERVER */
 gulp.task('server', function() {
@@ -49,6 +49,24 @@ gulp.task('scss', function(){
     	stream: true
     }));
 });
+
+/*------ Inline -------*/
+gulp.task('inline', function() {
+    return gulp.src('build/index.html')
+
+        .pipe(inlineCss({
+            	applyStyleTags: true,
+            	applyLinkTags: true,
+            	removeStyleTags: false,
+            	removeLinkTags: false
+        }))
+        .pipe(rename({
+        	suffix: "-inline"
+        }))
+        .pipe(gulp.dest('build/'));
+});
+
+
 
 /* WATCH */
 gulp.task('watch', function(){
