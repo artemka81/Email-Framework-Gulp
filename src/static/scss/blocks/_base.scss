@@ -4,9 +4,9 @@ table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
 img { -ms-interpolation-mode: bicubic; }
 
 /* RESET STYLES */
-img { border: 0; outline: none; text-decoration: none; }
+img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;}
 table { border-collapse: collapse !important; }
-body { margin: 0 !important; padding: 0 !important; width: 100% !important; }
+body { margin: 0 !important; padding: 0 !important; width: 100% !important; font-family: $base-font;}
 
 /* iOS BLUE LINKS */
 a[x-apple-data-detectors] {
