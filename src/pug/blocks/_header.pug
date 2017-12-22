@@ -1,8 +1,16 @@
 //- Header
 //----------
 mixin header
-	+grid-one
-		tr
-			td(align="center" height="100%" valign="top" width="100%" style="padding:10px;") Header
-
+	tr
+		td(align="center" height="100%" valign="top" width="100%")
+			+ie-open({table: 648})
+			table(width='648', cellspacing='0', cellpadding='0', border='0', align='center', style='max-width:648px; width:100%;')
+				tr
+					td(align='center', valign='top')
+						table(width='600', cellspacing='0', cellpadding='0', border='0', align='center', style='max-width:600px; width:100%;')
+							tr
+								td(align='center', valign='top', style='padding-top:40px;padding-bottom:40px;')
+									a(href="https://city.travel")
+										img(src="https://city.travel/images/ext/img/logo.png", width="167" height="45" border="0" alt="logo city.travel")
+			+ie-close
 

@@ -1,0 +1,60 @@
+//- Footer
+//----------
+mixin footer
+	tr
+		td(align="center" height="100%" valign="top" width="100%" style="padding-top:32px;")
+			+ie-open({table: 640})
+			table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:640px;")
+				tr
+					td(align="center" height="100%" valign="top" width="100%")
+						+ie-open({table: 600})
+						table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;" )
+							tr
+								td(align="center" valign="top" style="font-size:0; padding-bottom:40px;")
+									+ie-open({table: 600, cell:300})
+									div(style="display:inline-block; max-width:300px; vertical-align:top; width:100%;")
+										table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:300px;")
+											tr
+												td(align="left" valign="top" style="font-size:14px; padding-bottom:24px; padding-left:4px; padding-right:4px; padding-top:16px;")
+													.h3 Обратиться в чат-поддержку клиентов:
+													p(style="Margin:1em 0 0.2em 0; font-family: Roboto, sans-serif;") WhatsApp или Viber: +7 495 640 60 40
+													span.eng(style="font-size:14px; font-family: Roboto, sans-serif;") ежедневно с 7:00 до 24:00
+											tr
+												td(align="left" valign="top" style="font-size:14px; padding-left:4px; padding-right:4px; padding-bottom:8px;")
+													.h3 Присоединяйтесь
+											tr
+												td(align="left" valign="top" style="padding-bottom:8px;")
+													table( align="left" border="0" cellpadding="0" cellspacing="0")
+														tr
+															td(align="left" valign="top")
+																a(href="https://vk.com/citytravel" style="Margin-right: 8px;")
+																	img(src="https://city.travel/images/ext/img/vk.png", width="42" height="42" border="0" alt="Вконтакте" )
+															td &nbsp;
+															td(align="left" valign="top")
+																a(href="https://www.instagram.com/citytravel/" style="Margin-right: 4px;")
+																	img(src="https://city.travel/images/ext/img/instagram.png", width="42" height="42" border="0" alt="Инстаграм" )
+									+ie-col({cell:300})
+									div(style="display:inline-block; max-width:300px; vertical-align:top; width:100%;" )
+										table(align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:300px;")
+											tr
+												td(align="left" valign="top" style="font-size:14px; padding-bottom:24px; padding-left:4px; padding-right:4px;padding-top:16px;")
+													.h3 Связаться по телефону со cлужбой поддержки:
+													p(style="Margin:1em 0 0.2em 0; font-family: Roboto, sans-serif;") +7 495 640 60 40, +7 812 640 60 40
+													span.eng(style="font-size:14px; font-family: Roboto, sans-serif;") ежедневно с 7:00 до 24:00
+											tr
+												td(width="100%" align="left" valign="top" style="font-size:14px; padding-left:4px; padding-right:4px; padding-bottom:8px;")
+													.h3 Скачайте приложение
+											tr
+												td(align="left" valign="top" style="padding-bottom:8px;")
+													table( align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:300px;")
+														tr
+															td
+																a(href="https://vk.com/citytravel")
+																	img(src="https://city.travel/images/ext/img/google-play.png", width="141" height="42" border="0" alt="Google Play" )
+															td &nbsp;
+															td
+																a(href="https://www.instagram.com/citytravel/")
+																	img(src="https://city.travel/images/ext/img/app-store.png", width="128" height="42" border="0" alt="App Store" ) 
+									+ie-close
+						+ie-close
+			+ie-close

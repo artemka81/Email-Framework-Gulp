@@ -1,0 +1,67 @@
+.h1{
+    font-family: "Roboto", sans-serif;
+    color: $base-color;
+    font-size: 20px;
+    font-weight: normal;
+}
+.h2{
+    font-family: "Roboto", sans-serif;
+    color: $base-color;
+    font-size: 18px;
+    font-weight: normal;
+    border-bottom:3px solid $base-blue-color;
+    padding-bottom:5px;
+}
+.h3{
+    font-family: "Roboto", sans-serif;
+    color: $base-color;
+    font-size: 16px;
+    font-weight: normal;
+}
+.p{
+    font-family: "Roboto", sans-serif;
+    color: $base-color;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    Margin:0.5em 0;
+}
+.p2{
+    font-family: "Roboto", sans-serif;
+    color: $base-color;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    Margin:0.5em 0;
+}
+.title{
+    font-family: "Roboto", sans-serif;
+    float:left;
+    line-height: 20px;
+    color:white;
+   
+}
+.stars{
+    float: right; 
+    Margin-right:16px;  
+}
+.eng{
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    font-style:italic;
+    Margin:0.5em 0;
+    color:$base-grey-color;
+    }
+.cell{
+    font-size: 14px;
+    font-weight: normal;
+}
+.number{
+    border: 3px solid #ef4137;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color:#ef4137;
+    font-weight: 800;
+}

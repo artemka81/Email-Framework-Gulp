@@ -5,11 +5,8 @@ mixin grid-one
 		td(align="center" height="100%" valign="top" width="100%")
 			+ie-open({table: 640})
 			table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:640px;" bgcolor="#ffffff")
-				if block
-					block
-				else
-					tr
-						td(align="center" valign="top" style="font-size:14px; padding:10px;") Grid One 
+				tr
+					td
 			+ie-close
 
 //- grid-two
