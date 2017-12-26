@@ -23,7 +23,7 @@ gulp.task('server', function() {
 
 /* PUG */
 gulp.task('pug', function(){
-	return gulp.src('src/pug/index.pug')
+	return gulp.src('src/pug/*.pug')
 		.pipe(pug({
 			pretty:true
 		}))

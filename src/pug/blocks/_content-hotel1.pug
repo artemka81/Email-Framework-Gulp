@@ -1,0 +1,37 @@
+//- message
+//----------
+mixin message1
+	tr
+		td(align="center" height="100%" valign="top" width="100%")
+			+ie-open({table: 648})
+			table(width='648', cellspacing='0', cellpadding='0', border='0', align='center', style='max-width:648px; width:100%;' bgcolor='#4a90e2')
+				tr
+					td(align='center', valign='top')
+						table(width='600', cellspacing='0', cellpadding='0', border='0', align='center', style='max-width:600px; width:100%;')
+							tr
+								td(align='center' height="65" valign='middle')
+									p(style="font-family: Roboto, sans-serif; font-size:16px;line-height:16px;font-weight: 300;text-transform:uppercase; color:#ffffff") Ожидание подтверждения бронирования 
+										b 976433
+			+ie-close
+
+//- main
+//----------
+mixin main1
+	tr
+		td(align="center" height="100%" valign="top" width="100%")
+			+ie-open({table: 648})
+			table(width='648', cellspacing='0', cellpadding='0', border='0', align='center', style='max-width:648px; width:100%;',bgcolor='#ffffff')
+				tr
+					td(align='center', valign='top')
+						+ie-open({table: 600})
+						table(width='600', cellspacing='0', cellpadding='0', border='0', align='center', style='max-width:600px; width:100%;')
+							tr
+								td(align='center', valign='top', style='padding-top:32px;padding-bottom:32px;')
+									img(src="https://gallery.mailchimp.com/11b2ba62a2d4d21ef7a3daad5/images/91670e84-a4e5-4733-ab94-e249d8bf1365.png", alt="Ваш отель забронирован")
+							tr
+								td(align='left', valign='top', style='padding-bottom:48px;')
+									.h1 Ваше бронирование отеля Ambassador Aegean Luxury Hotel & Suites в городе Санторини
+									p.p Ожидайте подтверждения бронирования. О результате Вы будете извещены электронным письмом на Ваш контактный email.
+							
+						+ie-close
+			+ie-close
